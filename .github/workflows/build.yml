@@ -14,7 +14,7 @@ jobs:
         uses: microsoft/setup-msbuild@v2
 
       - name: build exe
-        run: msbuild BGIKit.sln /t:clean;rebuild /p:Configuration=Release
+        run: msbuild BGIKit.sln
 
       - name: Upload Executable
         uses: actions/upload-artifact@v4
